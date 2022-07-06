@@ -18,6 +18,6 @@ b = next;
 if (next % 2 == 0)
 sum += next;
 }
-printf("%i\n", sum);
+printf("%d\n", sum);
 return (0);
 }
