@@ -1,23 +1,31 @@
 #include <stdio.h>
 
 /**
- * main - main block
- * Description: prints even numbers less than 4,000,000
- * followed by a new line
- * Return: 0
+ * main - entry point in c
+ * Return: 0 if successful
  */
 int main(void)
 {
-int a = 0, b = 1, next = 0;
-int sum = 0;
-while (next < 4000000)
+long a = 1;
+long b = 2;
+int n = 3;
+printf("%li, ", a);
+printf("%li, ", b);
+while (n < 50)
 {
-next = a + b;
+long fib = a + b;
+printf("%li, ", fib);
 a = b;
-b = next;
-if (next % 2 == 0)
-sum += next;
+b = fib;
+n++;
 }
-printf("%d\n", sum);
+while (n == 50)
+{
+long fib = a + b;
+printf("%li\n", fib);
+a = b;
+b = fib;
+n++;
+}
 return (0);
 }
