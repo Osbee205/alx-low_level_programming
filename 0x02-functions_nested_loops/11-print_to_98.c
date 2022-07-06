@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * print_times_table - prints time table
- * @n : times table to use
+ * print_times_table - prints time table           * @n : times table to use
  * Description: prints the times table
  * Return:void
  */
@@ -23,26 +22,4 @@ else if (rep < 10)
 _putchar(' ');
 _putchar(' ');
 _putchar('0' + rep);
-}
-else if (rep < 100)
-{
-_putchar(' ');
-_putchar('0' + rep / 10);
-_putchar('0' + rep % 10);
-}
-else
-{
-_putchar('0' + rep / 100);
-_putchar('0' + (rep - 100) / 10);
-_putchar('0' + rep % 10);
-}
-if (b < n)
-{
-_putchar(',');
-_putchar(' ');
-}
-}
-_putchar('\n');
-a++;
-}
 }
