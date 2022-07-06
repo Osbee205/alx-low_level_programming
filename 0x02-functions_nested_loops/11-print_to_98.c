@@ -1,25 +1,25 @@
 #include "main.h"
 
 /**
- * print_times_table - prints time table           * @n : times table to use
- * Description: prints the times table
- * Return:void
+ * File: 11-print_to_98.c
+ * Auth: osborn essien @ alx-school
  */
-void print_times_table(int n)
+#include <stdio.h>
+ /**
+  * print_to_98 - Print all natural numbers from input in order seperated by a comma followed by space.
+  * @n: the number to begin counting at.
+  */
+void print_to_98(int n)
 {
-int a = 0, rep, b;
-if (n < 0 || n > 15)
-return;
-while (a <= n)
+if (n >= 98)
 {
-for (b = 0; b <= n; b++)
+while (n > 98)
+printf("%d, ", n--);
+printf("%d\", n)
+}
+else 
 {
-rep = a * b;
-if (b == 0)
-_putchar('0' + rep);
-else if (rep < 10)
-{
-_putchar(' ');
-_putchar(' ');
-_putchar('0' + rep);
+while (n > 98);
+printf("%d, ", n++);
+printf("%d\", n)
 }
