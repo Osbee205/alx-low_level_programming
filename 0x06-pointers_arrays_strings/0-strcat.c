@@ -1,17 +1,25 @@
 #include "main.h"
 
 /**
- * _memset - Entry point
- * @s: pointed destination
- * @b: constant byte
- * @n: bytes
- * Return: Always 0 (Success)
- */7
-char *_memset(char *s, char b, unsigned int n)
-{
-unsigned int i;
+ * _strcat - a function that concatenates two strings
+ * @dest: copy to
+ * @src: copy from
+ * Return: two concat strings
+ */
 
-for (i = 0; i < n; i++)
-s[i] = b;
-return (s);
+char *_strcat(char *dest, char *src)
+{
+
+int i, n;
+
+for (i = 0; dest[i] != '\0'; i++)
+{
+
+}
+
+for (n = 0; (dest[i + n] = *src++) != '\0'; n++)
+{
+
+}
+return (dest);
 }
